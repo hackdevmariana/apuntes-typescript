@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Apuntes de TypeScript",
   description: "Anotaciones personales sobre TypeScript y arquitectura",
+  base: '/apuntes-typescript/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
