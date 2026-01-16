@@ -23,3 +23,20 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+
+# Apuntes de TypeScript
+
+Estos son **apuntes personales**, no un curso ni un tutorial.
+
+Son anotaciones que voy tomando mientras trabajo y practico con:
+- TypeScript
+- JavaScript moderno
+- Arquitectura de software
+- Backend / Frontend / CLIs
+
+El objetivo es:
+- recordar conceptos
+- guardar ejemplos que funcionan
+- poder volver aquí cuando tenga dudas
+
+No hay garantía de orden, completitud ni enfoque pedagógico.
