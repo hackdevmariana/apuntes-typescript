@@ -18,6 +18,7 @@
   "dependencies": {
     "@iconify-icons/simple-icons": "^1.2.74",
     "@iconify-json/simple-icons": "^1.2.66",
+    "@iconify/icons-simple-icons": "^1.2.74",
     "@iconify/vue": "^5.0.0"
   }
 }
