@@ -40,3 +40,4 @@ El objetivo es:
 - poder volver aquí cuando tenga dudas
 
 No hay garantía de orden, completitud ni enfoque pedagógico.
+\nActualización inicial para disparar workflow
