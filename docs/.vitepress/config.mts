@@ -13,10 +13,22 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'TypeScript',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Tipos básicos', link: '/typescript/tipos-basicos' },
+          { text: 'Genéricos', link: '/typescript/generics' },
+        ]
+      },
+      {
+        text: 'CLI',
+        items: [
+          { text: 'Introducción', link: '/cli/introduccion' }
+        ]
+      },
+      {
+        text: 'Arquitectura',
+        items: [
+          { text: 'Clean Architecture', link: '/arquitectura/clean-architecture' }
         ]
       }
     ],
@@ -26,3 +38,5 @@ export default defineConfig({
     ]
   }
 })
+
+
