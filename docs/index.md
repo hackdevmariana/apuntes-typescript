@@ -1,57 +1,47 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
 hero:
   name: "Apuntes de TypeScript"
-  text: "Anotaciones personales sobre TypeScript y arquitectura"
-  tagline: My great project tagline
+  text: "Anotaciones personales sobre TypeScript, JS moderno y arquitectura"
+  tagline: Mi cuaderno de apuntes personal
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: "Markdown Examples"
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: "API Examples"
       link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import arquitecturaIcon from '@iconify-icons/simple-icons/architecture'
-import sqlIcon from '@iconify-icons/simple-icons/postgresql'
-import nodeIcon from '@iconify-icons/simple-icons/node-dot-js'
-import nestjsIcon from '@iconify-icons/simple-icons/nestjs'
-import vueIcon from '@iconify-icons/simple-icons/vue-dot-js'
-import nuxtIcon from '@iconify-icons/simple-icons/nuxtdotjs'
-import reactNativeIcon from '@iconify-icons/simple-icons/react'
-import jsIcon from '@iconify-icons/simple-icons/javascript'
-import gitIcon from '@iconify-icons/simple-icons/git'
+import arquitecturaIcon from '@iconify-json/simple-icons/architecture.json'
+import sqlIcon from '@iconify-json/simple-icons/postgresql.json'
+import nodeIcon from '@iconify-json/simple-icons/node-dot-js.json'
+import nestjsIcon from '@iconify-json/simple-icons/nestjs.json'
+import vueIcon from '@iconify-json/simple-icons/vue-dot-js.json'
+import nuxtIcon from '@iconify-json/simple-icons/nuxtdotjs.json'
+import reactNativeIcon from '@iconify-json/simple-icons/react.json'
+import jsIcon from '@iconify-json/simple-icons/javascript.json'
+import gitIcon from '@iconify-json/simple-icons/git.json'
 
-// Definir las cards
+// Definimos las cards
 interface Card {
   title: string
   link: string
-  icon: any
+  icons: any[]   // ahora puede tener 1 o 2 iconos
   description?: string
 }
 
 const cards: Card[] = [
-  { title: 'Arquitectura e ingeniería del software', link: '/arquitectura/clean-architecture', icon: arquitecturaIcon },
-  { title: 'SQL y PostgreSQL', link: '/sql-postgresql/', icon: sqlIcon },
-  { title: 'NodeJS', link: '/nodejs/', icon: nodeIcon },
-  { title: 'NestJS', link: '/nestjs/', icon: nestjsIcon },
-  { title: 'Vue / Nuxt', link: '/vue-nuxt/', icon: vueIcon },
-  { title: 'React Native', link: '/react-native/', icon: reactNativeIcon },
-  { title: 'Bibliotecas JS', link: '/bibliotecas-js/', icon: jsIcon },
-  { title: 'Git', link: '/git/', icon: gitIcon }
+  { title: 'Arquitectura e ingeniería del software', link: '/arquitectura/clean-architecture', icons: [arquitecturaIcon] },
+  { title: 'SQL y PostgreSQL', link: '/sql-postgresql/', icons: [sqlIcon] },
+  { title: 'NodeJS', link: '/nodejs/', icons: [nodeIcon] },
+  { title: 'NestJS', link: '/nestjs/', icons: [nestjsIcon] },
+  { title: 'Vue / Nuxt', link: '/vue-nuxt/', icons: [vueIcon, nuxtIcon] },
+  { title: 'React Native', link: '/react-native/', icons: [reactNativeIcon] },
+  { title: 'Bibliotecas JS', link: '/bibliotecas-js/', icons: [jsIcon] },
+  { title: 'Git', link: '/git/', icons: [gitIcon] }
 ]
 </script>
 
@@ -65,10 +55,13 @@ Se actualizan mientras practico y estudio TypeScript, arquitectura de software y
 <!-- Grid de cards -->
 <div class="home-grid">
   <div v-for="card in cards" :key="card.link" class="home-card">
-    <Icon :icon="card.icon" width="64" height="64" />
+    <div class="card-icons">
+      <Icon v-for="icon in card.icons" :key="icon.name" :icon="icon" width="48" height="48" />
+    </div>
     <h2>
       <a :href="card.link">{{ card.title }}</a>
     </h2>
+    <p v-if="card.description">{{ card.description }}</p>
   </div>
 </div>
 
@@ -76,34 +69,58 @@ Se actualizan mientras practico y estudio TypeScript, arquitectura de software y
 .home-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin-top: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* Tablet */
+@media(min-width: 640px) {
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Escritorio grande */
+@media(min-width: 1024px) {
+  .home-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .home-card {
   text-align: center;
-  padding: 1rem;
-  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
   transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
   background: var(--vp-c-bg);
 }
 
 .home-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .home-card h2 {
-  margin-top: 0.5rem;
-  font-size: 1.05rem;
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
 }
+
 .home-card a {
   text-decoration: none;
   color: var(--vp-c-text);
 }
+
 .home-card a:hover {
   text-decoration: underline;
+}
+
+/* Iconos múltiples en línea horizontal */
+.card-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 </style>
 
