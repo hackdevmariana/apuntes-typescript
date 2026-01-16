@@ -1,3 +1,5 @@
+import "./chunk-BUSYA2B4.js";
+
 // node_modules/@iconify-icons/simple-icons/postgresql.js
 var data = {
   "width": 24,

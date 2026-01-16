@@ -7,6 +7,7 @@ import {
   shallowRef,
   watch
 } from "./chunk-LE5NDSFD.js";
+import "./chunk-BUSYA2B4.js";
 
 // node_modules/vitepress/dist/client/theme-default/index.js
 import "/home/fernando/Proyectos/apuntes-typescript/node_modules/vitepress/dist/client/theme-default/styles/fonts.css";

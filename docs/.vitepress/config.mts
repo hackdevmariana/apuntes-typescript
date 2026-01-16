@@ -11,7 +11,7 @@ interface HomeBlock {
 export default defineConfig({
   title: "Apuntes de TypeScript",
   description: "Anotaciones personales sobre TypeScript y arquitectura",
-  base: '/apuntes-typescript/',
+  // base: '/apuntes-typescript/',
   themeConfig: {
     // Menú superior
     nav: [
@@ -83,14 +83,15 @@ export default defineConfig({
     footer: {
       message: 'Apuntes personales, no un curso ni tutorial.',
       copyright: '© 2026 hackdevmariana'
-    }
-  },
-
-
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
-  }
+  },
+
+
+    
+
 })
 
 
