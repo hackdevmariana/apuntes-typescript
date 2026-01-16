@@ -1,128 +1,89 @@
 {
-  "hash": "76e60ef1",
-  "configHash": "e54b406b",
+  "hash": "9f48f6f0",
+  "configHash": "23fb03ba",
   "lockfileHash": "1624777f",
-  "browserHash": "73ccca3f",
+  "browserHash": "47b66cf8",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "53d37196",
+      "fileHash": "a3814bbe",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "d7d6f323",
+      "fileHash": "b111c34b",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "87744938",
-      "needsInterop": false
-    },
-    "@theme/index": {
-      "src": "../../../../node_modules/vitepress/dist/client/theme-default/index.js",
-      "file": "@theme_index.js",
-      "fileHash": "0ae092ae",
+      "fileHash": "e3d013da",
       "needsInterop": false
     },
     "@iconify/vue": {
       "src": "../../../../node_modules/@iconify/vue/dist/iconify.mjs",
       "file": "@iconify_vue.js",
-      "fileHash": "bf65b57c",
+      "fileHash": "1e398627",
       "needsInterop": false
     },
-    "@iconify-icons/simple-icons/postgresql": {
-      "src": "../../../../node_modules/@iconify-icons/simple-icons/postgresql.js",
-      "file": "@iconify-icons_simple-icons_postgresql.js",
-      "fileHash": "231797d7",
-      "needsInterop": false
-    },
-    "@iconify-icons/simple-icons/nestjs": {
-      "src": "../../../../node_modules/@iconify-icons/simple-icons/nestjs.js",
-      "file": "@iconify-icons_simple-icons_nestjs.js",
-      "fileHash": "1fa4328a",
-      "needsInterop": false
-    },
-    "@iconify-icons/simple-icons/react": {
-      "src": "../../../../node_modules/@iconify-icons/simple-icons/react.js",
-      "file": "@iconify-icons_simple-icons_react.js",
-      "fileHash": "ef17baa0",
-      "needsInterop": false
-    },
-    "@iconify-icons/simple-icons/javascript": {
-      "src": "../../../../node_modules/@iconify-icons/simple-icons/javascript.js",
-      "file": "@iconify-icons_simple-icons_javascript.js",
-      "fileHash": "37db3d07",
-      "needsInterop": false
-    },
-    "@iconify-icons/simple-icons/git": {
-      "src": "../../../../node_modules/@iconify-icons/simple-icons/git.js",
-      "file": "@iconify-icons_simple-icons_git.js",
-      "fileHash": "08ec58cc",
-      "needsInterop": false
-    },
-    "@iconify/icons-simple-icons/nestjs": {
-      "src": "../../../../node_modules/@iconify/icons-simple-icons/nestjs.js",
-      "file": "@iconify_icons-simple-icons_nestjs.js",
-      "fileHash": "dc45af41",
-      "needsInterop": true
-    },
-    "@iconify/icons-simple-icons/nuxtdotjs": {
-      "src": "../../../../node_modules/@iconify/icons-simple-icons/nuxtdotjs.js",
-      "file": "@iconify_icons-simple-icons_nuxtdotjs.js",
-      "fileHash": "67cb1a81",
-      "needsInterop": true
-    },
-    "@iconify/icons-simple-icons/javascript": {
-      "src": "../../../../node_modules/@iconify/icons-simple-icons/javascript.js",
-      "file": "@iconify_icons-simple-icons_javascript.js",
-      "fileHash": "c6896fce",
-      "needsInterop": true
-    },
-    "@iconify/icons-simple-icons/git": {
-      "src": "../../../../node_modules/@iconify/icons-simple-icons/git.js",
-      "file": "@iconify_icons-simple-icons_git.js",
-      "fileHash": "74a39688",
+    "@iconify/icons-simple-icons/gnometerminal": {
+      "src": "../../../../node_modules/@iconify/icons-simple-icons/gnometerminal.js",
+      "file": "@iconify_icons-simple-icons_gnometerminal.js",
+      "fileHash": "8201e18c",
       "needsInterop": true
     },
     "@iconify/icons-simple-icons/postgresql": {
       "src": "../../../../node_modules/@iconify/icons-simple-icons/postgresql.js",
       "file": "@iconify_icons-simple-icons_postgresql.js",
-      "fileHash": "33a2a489",
-      "needsInterop": true
-    },
-    "@iconify/icons-simple-icons/react": {
-      "src": "../../../../node_modules/@iconify/icons-simple-icons/react.js",
-      "file": "@iconify_icons-simple-icons_react.js",
-      "fileHash": "7288d363",
+      "fileHash": "a6bb9fa6",
       "needsInterop": true
     },
     "@iconify/icons-simple-icons/nodedotjs": {
       "src": "../../../../node_modules/@iconify/icons-simple-icons/nodedotjs.js",
       "file": "@iconify_icons-simple-icons_nodedotjs.js",
-      "fileHash": "48addd80",
+      "fileHash": "61e8cf23",
+      "needsInterop": true
+    },
+    "@iconify/icons-simple-icons/nestjs": {
+      "src": "../../../../node_modules/@iconify/icons-simple-icons/nestjs.js",
+      "file": "@iconify_icons-simple-icons_nestjs.js",
+      "fileHash": "8ec2cd79",
       "needsInterop": true
     },
     "@iconify/icons-simple-icons/vuedotjs": {
       "src": "../../../../node_modules/@iconify/icons-simple-icons/vuedotjs.js",
       "file": "@iconify_icons-simple-icons_vuedotjs.js",
-      "fileHash": "3beb1191",
+      "fileHash": "10d3e6e1",
       "needsInterop": true
     },
-    "@iconify/icons-simple-icons/gnometerminal": {
-      "src": "../../../../node_modules/@iconify/icons-simple-icons/gnometerminal.js",
-      "file": "@iconify_icons-simple-icons_gnometerminal.js",
-      "fileHash": "cb61085f",
+    "@iconify/icons-simple-icons/nuxtdotjs": {
+      "src": "../../../../node_modules/@iconify/icons-simple-icons/nuxtdotjs.js",
+      "file": "@iconify_icons-simple-icons_nuxtdotjs.js",
+      "fileHash": "b45592a5",
+      "needsInterop": true
+    },
+    "@iconify/icons-simple-icons/react": {
+      "src": "../../../../node_modules/@iconify/icons-simple-icons/react.js",
+      "file": "@iconify_icons-simple-icons_react.js",
+      "fileHash": "eb9ab6a5",
+      "needsInterop": true
+    },
+    "@iconify/icons-simple-icons/javascript": {
+      "src": "../../../../node_modules/@iconify/icons-simple-icons/javascript.js",
+      "file": "@iconify_icons-simple-icons_javascript.js",
+      "fileHash": "7f29e19f",
+      "needsInterop": true
+    },
+    "@iconify/icons-simple-icons/git": {
+      "src": "../../../../node_modules/@iconify/icons-simple-icons/git.js",
+      "file": "@iconify_icons-simple-icons_git.js",
+      "fileHash": "67ffcd37",
       "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-2CLQ7TTZ": {
-      "file": "chunk-2CLQ7TTZ.js"
-    },
     "chunk-LE5NDSFD": {
       "file": "chunk-LE5NDSFD.js"
     },
